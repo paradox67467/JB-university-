@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Jagannath Barooah University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card glass-card">
+      <div class="logo-area">
+        <img src="assets/jbu-logo.png" alt="JBU Logo" style="width: 70px; margin-bottom: 15px;">
+        <h2>Jagannath Barooah</h2>
+        <p>UNIVERSITY</p>
+      </div>
+
+      <div class="step active">
+        <h3>Student Portal</h3>
+        <p class="subtitle">Enter your details to access the university dashboard.</p>
+        
+        <form id="login-form">
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Student Email Address" required>
+          </div>
+          <div class="input-group mt-2">
+            <input type="password" id="password" placeholder="Password" required>
+          </div>
+          
+          <p id="error-msg" class="error-msg"></p>
+          
+          <button type="submit" id="login-btn" class="btn btn-primary block mt-3">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

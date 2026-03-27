@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jagannath Barooah University</title>
+  <script>
+    // Protect this page
+    if (localStorage.getItem('jbu_auth') !== 'true') {
+        window.location.href = 'login.html';
+    }
+  </script>
+  <meta name="description" content="Jagannath Barooah University, founded in 1930 in Jorhat, Assam. Accredited NAAC 'A' grade. Empowering minds since 1930.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <img src="assets/jbu-logo.png" alt="JBU Logo" class="logo-img">
+        <div class="logo-text-container">
+          <span class="logo-text">Jagannath Barooah University</span>
+          <span class="logo-sub">EST. 1930</span>
+        </div>
+      </a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-links">Home</a></li>
+        <li><a href="#history" class="nav-links">History</a></li>
+        <li><a href="#departments" class="nav-links">Departments</a></li>
+        <li><a href="#courses" class="nav-links">Courses</a></li>
+        <li><a href="#library" class="nav-links">Library</a></li>
+        <li><a href="#alumni" class="nav-links">Alumni</a></li>
+        <li><a href="#" id="logout-btn" class="nav-links">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <div class="badge fade-in-up">Government of Assam Act 2023</div>
+      <h1 class="fade-in-up delay-1">Jagannath Barooah University</h1>
+      <p class="fade-in-up delay-2">A Legacy of Excellence in Higher Education. Accredited with NAAC 'A' Grade.</p>
+      <div class="hero-actions fade-in-up delay-3">
+        <a href="#courses" class="btn btn-primary">Explore Courses</a>
+        <a href="#history" class="btn btn-secondary">Our Legacy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- History Section -->
+  <section id="history" class="section dark-section">
+    <div class="container relative reveal">
+      <div class="section-title">
+        <h2>Our Heritage</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="grid-2">
+        <div class="history-content flex-center glass-card p-4">
+          <p class="lead-text">Established on <strong>19 August 1930</strong>, Jagannath Barooah University represents the academic soul of Upper Assam.</p>
+          <p>Initially named Upper Assam College and later Jorhat College, it was renamed in 1938 to honor Jagannath Barooah, the first graduate of Upper Assam (1872). The legacy lives on in the commodious 'Borpatra Kutir', generously donated by Murulidhar Barooah.</p>
+          <ul class="feature-list mt-3">
+            <li><strong>Founder Principal:</strong> Prof. Krishna Kanta Handique</li>
+            <li><strong>Accreditation:</strong> NAAC 'A' Grade (2003)</li>
+            <li><strong>University Status:</strong> Jagannath Barooah University Act 2023</li>
+          </ul>
+        </div>
+        <div class="history-image flex-center">
+          <div class="image-wrapper glow-border">
+            <img src="assets/heritage.jpg" alt="JB College Heritage Building Second View">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Departments Section -->
+  <section id="departments" class="section texture-section">
+    <div class="container reveal">
+      <div class="section-title text-center">
+        <h2>Academic Departments</h2>
+        <div class="title-underline mx-auto"></div>
+        <p class="subtitle">A diverse spectrum of arts, science, and commerce disciplines.</p>
+      </div>
+      <div class="departments-grid">
+        <!-- These will be generated via JS for clean markup, or hardcoded -->
+        <div class="dept-card"><h3>Assamese</h3></div>
+        <div class="dept-card"><h3>Bengali</h3></div>
+        <div class="dept-card"><h3>Bio-Technology</h3></div>
+        <div class="dept-card"><h3>Botany</h3></div>
+        <div class="dept-card"><h3>Chemistry</h3></div>
+        <div class="dept-card"><h3>Commerce</h3></div>
+        <div class="dept-card"><h3>Computer Science</h3></div>
+        <div class="dept-card"><h3>Economics</h3></div>
+        <div class="dept-card"><h3>Electronics</h3></div>
+        <div class="dept-card"><h3>English</h3></div>
+        <div class="dept-card"><h3>Geography</h3></div>
+        <div class="dept-card"><h3>Geology</h3></div>
+        <div class="dept-card"><h3>Hindi</h3></div>
+        <div class="dept-card"><h3>History</h3></div>
+        <div class="dept-card"><h3>Mathematics</h3></div>
+        <div class="dept-card"><h3>Philosophy</h3></div>
+        <div class="dept-card"><h3>Physics</h3></div>
+        <div class="dept-card"><h3>Political Science</h3></div>
+        <div class="dept-card"><h3>Sanskrit</h3></div>
+        <div class="dept-card"><h3>Sociology</h3></div>
+        <div class="dept-card"><h3>Statistics</h3></div>
+        <div class="dept-card"><h3>Zoology</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="section dark-gradient-section">
+    <div class="container reveal">
+      <div class="section-title text-center">
+        <h2>Programs Offered</h2>
+        <div class="title-underline mx-auto"></div>
+      </div>
+      <div class="courses-grid">
+        <!-- Bachelor -->
+        <div class="course-card glass-card">
+          <div class="course-index">01</div>
+          <h3>Bachelor Programmes</h3>
+          <ul class="course-list">
+            <li>Bachelor of Arts (B.A)</li>
+            <li>Bachelor of Science (B.Sc.)</li>
+            <li>Bachelor of Commerce (B.COM)</li>
+            <li>Bachelor of Computer Application (BCA)</li>
+          </ul>
+        </div>
+        <!-- Master -->
+        <div class="course-card glass-card featured-card">
+          <div class="course-index">02</div>
+          <h3>Master Programmes</h3>
+          <p class="sub-text">Geography, Philosophy, Assamese, Commerce, Political Science, History, Mathematics, Sociology, English.</p>
+          <div class="divider"></div>
+          <h4>Distance Education (Dibrugarh University)</h4>
+          <p class="sub-text">Assamese, Commerce, Economics, History, Mathematics, Political Science & Sociology.</p>
+        </div>
+        <!-- Diploma -->
+        <div class="course-card glass-card">
+          <div class="course-index">03</div>
+          <h3>Diploma Programmes</h3>
+          <div style="flex-grow: 1; margin-bottom: 1.5rem;">
+            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.1rem;">Post-graduate Diploma (PGDCA)</h4>
+            <p class="sub-text" style="font-size: 0.95rem; line-height: 1.5;">Empower your career with advanced computational skills and modern IT applications. Click below to view the full prospectus.</p>
+          </div>
+          <a href="assets/pgdca-details.pdf" target="_blank" class="btn btn-primary" style="text-align: center; width: 100%;">View Course Details &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Library Section -->
+  <section id="library" class="section full-width library-section">
+    <div class="library-bg"></div>
+    <div class="container reveal relative z-10 flex-center">
+      <div class="library-content glass-card premium-glass">
+        <div class="badge accent-badge">Knowledge Hub</div>
+        <h2>Krishnakanta Handiqui Central Library</h2>
+        <p class="lead-text mt-2">A state-of-the-art repository of knowledge featuring a well-stocked collection and modern ILMS automation (Koha).</p>
+        
+        <div class="stats-grid mt-4">
+          <div class="stat-item">
+            <span class="stat-number">53k+</span>
+            <span class="stat-label">Books</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3,104</span>
+            <span class="stat-label">Back Volumes</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Dailies & Journals</span>
+          </div>
+        </div>
+
+        <div class="library-footer mt-4 flex-between">
+          <span><strong>Hours:</strong> Mon - Sat | 09:00 AM – 04:30 PM</span>
+          <span><strong>System:</strong> Web OPAC</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alumni Section -->
+  <section id="alumni" class="section bg-light">
+    <div class="container reveal">
+      <div class="section-title text-center">
+        <h2>Notable Alumni</h2>
+        <div class="title-underline mx-auto"></div>
+        <p class="subtitle">Our legacy shapes the leaders of tomorrow.</p>
+      </div>
+      
+      <div class="alumni-grid">
+        <div class="alumni-card glass-card">
+          <h4>Sheela Borthakur</h4>
+          <p>Social Worker & Padma Shri Awardee</p>
+        </div>
+        <div class="alumni-card glass-card">
+          <h4>Zubeen Garg</h4>
+          <p>Singer, Composer, Filmmaker</p>
+        </div>
+        <div class="alumni-card glass-card">
+          <h4>Tarun Gogoi</h4>
+          <p>Former Chief Minister of Assam</p>
+        </div>
+        <div class="alumni-card glass-card">
+          <h4>Bijoy Krishna Handique</h4>
+          <p>Former Union Minister (MP)</p>
+        </div>
+        <div class="alumni-card glass-card">
+          <h4>Pabitra Margherita</h4>
+          <p>Politician, Actor, Singer</p>
+        </div>
+        <div class="alumni-card glass-card">
+          <h4>Jayanta Nath & Manas Robin</h4>
+          <p>Singers & Composers</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container flex-between">
+      <div class="footer-brand">
+        <h3>Jagannath Barooah University</h3>
+        <p>Jorhat, Assam, India - 785001</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#history">History</a>
+        <a href="#departments">Departments</a>
+        <a href="#alumni">Alumni</a>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Jagannath Barooah University. Formally Promoted by JBU Act 2023.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
